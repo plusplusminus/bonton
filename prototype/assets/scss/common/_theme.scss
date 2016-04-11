@@ -45,8 +45,51 @@ body {
 .jumbotron {
 	height: 600px;
 	width: 100%;
-	padding-left: 100px;
 	margin-bottom: 0px;
+	padding-left: 100px;
+}
+
+#carousel {
+	height: 600px;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.carousel-indicators {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	z-index: 15;
+	width: 60%;
+	padding-left: 0;
+	padding-right: 30px;
+	margin-left: -30%;
+	text-align: center;
+	list-style: none;
+
+li {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 10px;
+	text-indent: -999px;
+	cursor: pointer;
+	// IE9 hack for event handling
+	//
+	// Internet Explorer 9 does not properly handle clicks on elements with a `background-color` of `transparent`,
+	// so we use `rgba(0,0,0,0)` instead since it's a non-buggy equivalent.
+	// See https://developer.mozilla.org/en-US/docs/Web/Events/click#Internet_Explorer
+	background-color: rgba(0,0,0,0); // IE9
+	border: 1px solid $carousel-indicator-border-color;
+	border-radius: 10px;
+}
+
+.active {
+	width: 15px;
+	height: 15px;
+	margin: 10px;
+	background-color: $carousel-indicator-active-bg;
+	}
 }
 
 .banner-content {

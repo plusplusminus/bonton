@@ -723,8 +723,12 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .list-inline li{display:inline;padding-right:.5rem}.list-group-item:active{background-color:#eee}
 body{padding-top:0}.content{margin-top:1rem}.navbar-sidebar{margin-right:50px;margin-top:30px}
 .navbar-sidebar a{margin:0;padding:0;text-decoration:none;color:#fff;font-weight:700}
-.jumbotron{height:600px;width:100%;padding-left:100px;margin-bottom:0}.banner-content{height:600px;width:100%;margin-bottom:0}
-.col-centered{float:none;margin:0 auto}.scroll{font-size:60px}.blockquote{height:200px;width:100%;font-size:30px;text-align:center;padding-top:60px}
+.jumbotron{height:600px;width:100%;margin-bottom:0;padding-left:100px}#carousel{height:600px;width:100%;margin-bottom:0}
+.carousel-indicators{position:absolute;bottom:10px;left:50%;z-index:15;width:60%;padding-left:0;padding-right:30px;margin-left:-30%;text-align:center;list-style:none}
+.carousel-indicators li{display:inline-block;width:15px;height:15px;margin:10px;text-indent:-999px;cursor:pointer;background-color:transparent;border:1px solid #fff;border-radius:10px}
+.carousel-indicators .active{width:15px;height:15px;margin:10px;background-color:#fff}
+.banner-content{height:600px;width:100%;margin-bottom:0}.col-centered{float:none;margin:0 auto}
+.scroll{font-size:60px}.blockquote{height:200px;width:100%;font-size:30px;text-align:center;padding-top:60px}
 .card-title{font-family:Georgia,"Times New Roman",Times,serif}.base-finder button:active,.base-finder button:focus{outline:0}
 .base-finder .card{border-radius:0;border:0}.newsletter{background-color:#bbb;color:#373a3c;font-size:14px}
 .footer{background-color:#373a3c;color:#fff;font-size:14px}.footer a{color:#fff}
