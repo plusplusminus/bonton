@@ -1,18 +1,61 @@
 .row
-    .card.card-inverse.bg-inverse.banner-content
-        .row
-            .col-md-10
-                p
-            .col-md-2
-                .navbar-sidebar
-                    ul.nav.pull-right
-                      li.nav-item
-                        a.nav-link(href='#') Link
-                      li.nav-item
-                        a.nav-link(href='#') Link
-                      li.nav-item
-                        a.nav-link(href='#') Another link
-        
+    #carousel.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+            li.active(data-target='#carousel', data-slide-to='0')
+            li(data-target='#carousel', data-slide-to='1')
+        .carousel-inner(role='listbox')
+            .carousel-item.active
+                .card.card-inverse.bg-inverse.banner-content
+                    .row
+                        .col-md-10
+                            p
+                        .col-md-2
+                            .navbar-sidebar
+                                ul.nav.pull-right
+                                  li.nav-item
+                                    a.nav-link(href='#') Link
+                                  li.nav-item
+                                    a.nav-link(href='#') Link
+                                  li.nav-item
+                                    a.nav-link(href='#') Another link
+                    .row
+                        .col-md-12
+                            br
+                            br
+                            br
+                            br
+                            br
+                            h5.text-xs-center Sed posuere consectetur est at lobortis.
+                            hr.title
+                            h6.text-muted.text-xs-center
+                                em Corporate
+
+            .carousel-item
+                .card.card-inverse.bg-inverse.banner-content
+                    .row
+                        .col-md-10
+                            p
+                        .col-md-2
+                            .navbar-sidebar
+                                ul.nav.pull-right
+                                  li.nav-item
+                                    a.nav-link(href='#') Link
+                                  li.nav-item
+                                    a.nav-link(href='#') Link
+                                  li.nav-item
+                                    a.nav-link(href='#') Another link
+                    .row
+                        .col-md-12
+                            br
+                            br
+                            br
+                            br
+                            br
+                            h5.text-xs-center Cum sociis natoque penatibus.
+                            hr.title
+                            h6.text-muted.text-xs-center
+                                em Corporate
+
 .row
     .col-md-1.col-centered.scroll
-            i.fa.fa-arrow-down
+        i.fa.fa-arrow-down
