@@ -7,39 +7,46 @@ block content
                 .col-md-12
                     ul.nav.nav-pills.small
                         li.nav-item
-                            a.nav-link.active(href="/blog") Latest Stories
+                            a.nav-link(href="/blog") Latest
                         li.nav-item
-                            a.nav-link(href="/blog/category") Rescues
+                            a.nav-link.active(href="/blog/category") Rescues
                         li.nav-item
-                            a.nav-link(href="/blog/category") Announcements
+                            a.nav-link(href="/blog/category") Projects
                         li.nav-item
-                            a.nav-link(href="/blog/category") Competitions
+                            a.nav-link(href="/blog/category") Publications
                         li.nav-item
                             a.nav-link(href="/blog/category") Press
             br
-            h1.Blog Category Title
+            h1.Blog Rescues
             br
             .card-deck
                 each title in ["Cras mattis consectetur purus sit amet.", "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.", "Nullam id dolor id nibh ultricies vehicula ut id elit.", "Etiam porta sem malesuada magna."]
                     .card.story
-                        img.card-img-top(src="holder.js/100px160")
+                        img.card-img-top(src="holder.js/100px200")
                         .card-block
-                            span.label.label-default Cateory
+                            span.label.label-default Rescues
+                            &nbsp;
                             span.label.label-default Rescue Base Name
+                            br
+                            br
                             h4.card-title= title
                             p.small
                                 strong 4 March 2016
                             a.card-link(href="/posts/single")
                                 |   Read More 
                                 i.fa.fa-long-arrow-right
+
             br
             .card-deck
                 each title in ["Inceptos Cras Magna Tellus Sit","Fermentum Ligula Bibendum Nullam Euismod","Porta Fusce Dolor Sem Pellentesque","Dolor Commodo Vulputate Tristique Lorem"]
                     .card.story
                         img.card-img-top(src="holder.js/100px160")
                         .card-block
-                            span.label.label-default Cateory
+                            span.label.label-default Rescues
+                            &nbsp;
                             span.label.label-default Rescue Base Name
+                            br
+                            br
                             h4.card-title= title
                             p.small
                                 strong 4 March 2016
@@ -51,5 +58,6 @@ block content
                 .col-md-12
                     .read-more.text-center
                         a.btn.btn-primary(href="#")
-                            | View more 
+                            | View More 
                             i.fa.fa-long-arrow-right
+            br

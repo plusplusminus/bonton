@@ -1,0 +1,140 @@
+extends ../../layouts/layout.jade
+
+block content
+    .container
+        .content
+            .row
+                .col-md-8
+                    .card.single
+                        .card-header About Us
+                        .card-block
+                            h1.card-title.sans Our Volunteers
+                            p.small.pull-md-left
+                            p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                            img.thumbnail(src="holder.js/100px400")
+                            p.small.text-right
+                                em This is an image caption
+                            
+                            h2.card-title.sans Our Top Volunteers
+                            br
+                            .media
+                                        a.media-left
+                                            img.media-object.staff(src="holder.js/150x150")
+                                        .media-body
+                                            h4.media-heading Name
+                                            h4.small.media-heading.text-muted Duties
+                                            |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            br
+                            .media
+                                        a.media-left
+                                            img.media-object.staff(src="holder.js/150x150")
+                                        .media-body
+                                            h4.media-heading Name
+                                            h4.small.media-heading.text-muted Duties
+                                            |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            br
+                            .media
+                                        a.media-left
+                                            img.media-object.staff(src="holder.js/150x150")
+                                        .media-body
+                                            h4.media-heading Name
+                                            h4.small.media-heading.text-muted Duties
+                                            |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                            #myModalVolunteer.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                                .modal-dialog(role='document')
+                                    .modal-content
+
+                                        .modal-header
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                span(aria-hidden='true') ×
+                                            h4.modal-title Volunteer
+                                        .modal-body
+                                            form
+                                                .form-group
+                                                    label(for='exampleInputName2') Full Name&nbsp;
+                                                    input#exampleInputName2.form-control(type='text', placeholder='')
+                                                .form-group
+                                                    label(for='exampleInputEmail2') Email address&nbsp;
+                                                    input#exampleInputEmail2.form-control(type='email', placeholder='')
+                                            form
+                                                fieldset.form-group
+                                                  label(for='exampleTextarea') In what way are you willing to help?&nbsp; 
+                                                  label.small e.g. skills, at events etc.
+                                                  textarea#exampleTextarea.form-control(rows='4', placeholder='') 
+                                            br
+                                            .checkbox.small.text-muted
+                                                label
+                                                    input(type='checkbox')
+                                                    |   I agree to the 
+                                                    a(href="#")
+                                                        |   Terms &amp; Conditions.
+                                            .checkbox.small.text-muted
+                                                label
+                                                    input(type='checkbox')
+                                                    |   Sign me up for the NSRI newsletter.
+                                        .modal-footer
+                                            button.btn.btn-primary(type='button', data-dismiss='modal') Sign Up
+
+                            br    
+                            a.btn.btn-success.btn-lg(href="/volunteer") Volunteer
+                            br
+                            br
+
+                .col-md-4
+                    .card.sidebar
+                        .card-block
+                            h4.card-title.sans About Us
+                            .list-group.list-group-flush
+                                a.list-group-item(href="/about/history") Our History
+                                a.list-group-item(href="/about/values") Our Values
+                                a.list-group-item(href="/about/staff") Our Staff
+                                a.list-group-item(href="/about/board") Our Board
+                                a.list-group-item.active(href="/about/volunteers") Our Volunteers
+                                a.list-group-item(href="/about/donors") Our Partners
+                                a.list-group-item(href="/about/stats") Stats
+                                a.list-group-item(href="/about/bbbee") BBBEE &amp; SARS
+                                a.list-group-item(href="/about/vacancies") Vacancies
+
+                    br
+                    a(href="/waterwise")
+                        .card.story.card-inverse(style="background-color:#333;")
+                            .card-block
+                                br
+                                br
+                                h3.card-title Volunteer to work with WaterWise's Training Academy.
+                                br
+                                br
+                    
+                    br
+                    .card.sidebar
+                        .card-block
+                            h4.card-title.sans Get Involved
+                            .list-group.list-group-flush
+                                a.list-group-item(href="/donate")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Donate
+                                a.list-group-item(href="/volunteer")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Volunteer Your Time
+                                a.list-group-item(href="membership")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Membership Options
+                                a.list-group-item(href="/partner")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Partner with Us
+                                a.list-group-item(href="/sponsor")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Sponsor a Boat
+
+                    br
+                    a(href="/about/vacancies")
+                        .card.story.card-inverse(style="background-color:#555;")
+                            .card-block
+                                br
+                                br
+                                h3.card-title Current vacancies.
+                                br
+                                br
+
+    br

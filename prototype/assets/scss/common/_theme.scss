@@ -1,0 +1,106 @@
+.sans{
+	font-family: $font-family-sans-serif !important;
+}
+
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+
+.list-inline{
+	list-style: none;
+	li{
+		display: inline;
+		padding-right: 0.5rem;
+	}
+}
+
+.list-group-item:active {
+	background-color: #eee;
+}
+
+body {
+	padding-top: 0px;
+}
+
+.content{
+	margin-top: 1rem;
+}
+
+.navbar-sidebar {
+	margin-right: 50px;
+	margin-top: 30px;
+}
+
+.navbar-sidebar a {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+}
+
+.jumbotron {
+	height: 600px;
+	width: 100%;
+	padding-left: 100px;
+	margin-bottom: 0px;
+}
+
+.banner-content {
+	height: 600px;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.scroll {
+	font-size: 60px;
+}
+
+.blockquote {
+	height: 200px;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.card-title {
+	font-family: $font-family-serif;
+}
+
+.base-finder{
+	button{
+		&:active,
+		&:focus{
+			outline: none;
+		}
+	}
+	.card{
+		border-radius: 0;
+		border: none;
+	}
+}
+
+.newsletter{
+	background-color: $brand-grey;
+	color: $brand-black;
+	font-size: 14px;
+}
+
+.footer{
+	background-color: $brand-black;
+	color: $brand-footer;
+	font-size: 14px;
+}
+
+.footer a {
+	color: $brand-footer;
+}

@@ -1,0 +1,169 @@
+extends ../layouts/layout.jade
+
+block content
+    .container
+        .content
+            .row
+                .col-md-8
+                    .card.single
+                        .card-block
+                            h1.card-title.sans WaterWise 
+                            .clearfix
+                            p.card-text.lead The WaterWise Academy: teaching children water safety to prevent drowning tragedies since 2006.
+                            img.thumbnail(src="holder.js/100px400")
+                            p.small.text-right
+                                em This is an image caption
+                            p In South Africa there are 2 000 fatal drownings each year, 600 of which are children. That is the equivalent of nine double decker buses full of children who drown each year.  We need to change the lives of children by giving them water safety lessons in a safe learning environment.
+
+                            p According to the Medical Research Council, those most at risk of drowning are children from poor communities – peri-urban and rural. The highest incidence of drowning is in fresh water, farm dams and rivers.
+                            img.thumbnail(src="holder.js/100px400?text=Video")
+                            p.small.text-right
+                                em This is a caption
+                            p Our WaterWise Academy Instructors prevent drowning tragedies through education. We teach children how to avoid danger in or near water, what to do in an emergency, who to call for help, how to do peer rescue and Hands On CPR. The interactive presentation is given on school premises at no charge. 
+                            p We have taught over 980 000 children since 2006. Our 10 Instructors and 9 volunteer Instructors are based around the country and visit classrooms in needy communities.  You can see a breakdown of our statistics 
+                                a(href="/stats") here.
+                            img.thumbnail(src="holder.js/100px400")
+                            p.small.text-right
+                                em This is an image caption
+                            p Deaths from drowning during 2010 in South Africa numbered 1 428 (Medical Research Council) which constitute 5% of non-natural deaths (29 768). Many (almost half) of these fatalities are children and most occur in fresh water (rivers, dams, ponds, pools). 
+                            p The rate of drowning in South Africa, 2.7/100 000 population, hasn’t improved in the last ten years (2004). The incidents of non fatal drowning often results in severe disability (brain damage from hypoxic injury) and is several times the number of fatal drowning.
+                            p The incidence of drowning increases with age being 1-2% of all causes of death in the 1-4 year age group, 2-5% in the 5 – 9 year age group and 3 – 8% in the 10 – 14 year age group although the greatest number of drowning occurs in the 1 – 4 year age group. Boys (80%) outnumber girls in those succumbing to drowning. Most drowning occurs in the summer months and more than 40% of adults who drowned had positive blood alcohol levels. Drowning from boating related incidents are one tenth those of drowning ashore.
+                            //- br
+                            //- hr
+                            //- br
+
+                            //- h3 We Need Your Help
+                            //- p The WaterWise Academy needs to reach more children. Our current challenge is to source the funding to train more Instructors.
+                            //- p Six of our WaterWise Academy Instructors are proudly sponsored by Transnet National Ports Authority ( TNPA). Western Cape Disaster Management also supports the WaterWise Academy.
+                            //- br
+                            //- a.btn.btn-success.btn-lg(href="/donate") Donate
+                            //- br
+                            //- br
+                            //- hr
+                            //- br
+
+                            //- h3 WaterWise Academy Partnership Opportunities
+                            //- p WaterWise partner in Education:
+                            //-     ul
+                            //-         li Sponsor a WaterWise Academy Instructor per annum
+                            //-         li R 214 970 (2016)   R 236 470 (2017)  R 260 110 (2018)
+                            //-         li R54 743 sponsors a WaterWise Academy Instructor for term (2016).
+                            //-         li Optional add on sponsorship: Branded materials (Quotation on request).
+                            //- br
+                            //- a.btn.btn-success.btn-lg(href="/donate") Donate
+                            //- br
+                            //- br
+                            //- hr
+                            //- br
+
+                            //- h3 Other Partnership Opportunities
+                            //- p WaterWise partner in Education:
+                            //-     ul
+                            //-         li Bronze Partner 
+                            //-         li Silver Partner 
+                            //-         li Gold Partner
+                            //-         li Platinum Partner 
+                            //- br
+                            //- a.btn.btn-success.btn-lg(href="/partner") Partnership Opportunities
+                            //- br
+                    br
+
+                .col-md-4
+                    .card.sidebar
+                        .card-block
+                            h4.card-title.sans Get Involved
+                            .list-group.list-group-flush
+                                a.list-group-item(href="/donate")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Donate
+                                a.list-group-item(href="/volunteer")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Volunteer Your Time
+                                a.list-group-item(href="membership")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Membership Options
+                                a.list-group-item(href="/partner")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Partner with Us
+                                a.list-group-item(href="/sponsor")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Sponsor a Boat
+                    br
+                    a(href="/donate")
+                        .card.story.card-inverse(style="background-color:#ccc;")
+                            .card-block
+                                br
+                                br
+                                h3.card-title Our WaterWise Academy has trained 980,726 children about water safety &amp; basic CPR
+                                br
+                    br
+                    a(href="/waterwise")
+                        .card.story.card-inverse(style="background-color:#333;")
+                            .card-block
+                                br
+                                br
+                                h3.card-title Volunteer to work with WaterWise's Training Academy.
+                                br
+                                br
+                    //- br
+                    //- .card.story
+                    //-     .card-header.small
+                    //-         strong Special Focus Story
+                    //-     img.card-img-top(src="holder.js/100px200")
+                    //-     .card-block
+                    //-         span.label.label-default Projects
+                    //-         &nbsp;
+                    //-         span.label.label-default Rescue Base Name
+                    //-         br
+                    //-         br
+                    //-         h3.card-title Aenean Ridiculus Porta Quam.
+                    //-         p.small
+                    //-             strong 23 January 2016
+                    //-         a.btn.btn-primary(href="/posts/single")
+                    //-             |   Read More 
+                    //-             i.fa.fa-long-arrow-right
+                    //- br                   
+                    //- a(href="/volunteer")
+                    //-     .card.story.card-inverse(style="background-color:#555;")
+                    //-         .card-block
+                    //-             br
+                    //-             br
+                    //-             h3.card-title Durban Rescue Base needs administrative volunteers.
+                    //-             h3.card-title Apply now.
+                    //-             br
+                    //- br
+                    //- a(href="/volunteer")
+                    //-     .card.story.card-inverse(style="background-color:#333;")
+                    //-         .card-block
+                    //-             br
+                    //-             br
+                    //-             h3.card-title Bakoven Rescue Base needs medical volunteers.
+                    //-             h3.card-title Apply now.
+                    //-             br
+                    br 
+                    .card    
+                        .card-block           
+                            h3 We Need Your Help
+                            p The WaterWise Academy needs to reach more children. Our current challenge is to source the funding to train more Instructors.
+                            p Six of our WaterWise Academy Instructors are proudly sponsored by Transnet National Ports Authority ( TNPA). Western Cape Disaster Management also supports the WaterWise Academy.
+                            br
+                            a.btn.btn-success.btn-lg(href="/donate") Donate
+                    br 
+                    .card    
+                        .card-block           
+                            h3 Partnership Opportunities    
+                            ul
+                                li Sponsor a WaterWise Academy Instructor per annum
+                                li R 214 970 (2016)   R 236 470 (2017)  R 260 110 (2018)
+                                li R54 743 sponsors a WaterWise Academy Instructor for term (2016).
+                                li Optional add on sponsorship: Branded materials (Quotation on request).
+                            h3 Partnership
+                            h3 Options
+                            ul
+                                li Bronze Partner 
+                                li Silver Partner 
+                                li Gold Partner
+                                li Platinum Partner 
+                            br
+                            a.btn.btn-success.btn-lg(href="/partner") Partner with WaterWise
+                            br

@@ -39,7 +39,7 @@ th{text-align:left}label{display:inline-block;margin-bottom:.5rem}button:focus{o
 input,button,select,textarea{margin:0;line-height:inherit;border-radius:0}textarea{resize:vertical}
 fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit}
 input[type="search"]{box-sizing:inherit;-webkit-appearance:none}
-output{display:inline-block}[hidden]{display:none !important}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-bottom:.5rem;font-family:Georgia,"Times New Roman",Times,serif;font-weight:500;line-height:1.1;color:inherit}
+output{display:inline-block}[hidden]{display:none !important}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit}
 h1{font-size:2.5rem}h2{font-size:2rem}h3{font-size:1.75rem}h4{font-size:1.5rem}h5{font-size:1.25rem}
 h6{font-size:1rem}.h1{font-size:2.5rem}.h2{font-size:2rem}.h3{font-size:1.75rem}.h4{font-size:1.5rem}
 .h5{font-size:1.25rem}.h6{font-size:1rem}.lead{font-size:1.25rem;font-weight:300}
@@ -718,4 +718,13 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}
 }.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}
 }.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}
-}@media print{.hidden-print{display:none !important}}
+}@media print{.hidden-print{display:none !important}}.sans{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important}
+.text-center{text-align:center}.text-right{text-align:right}.list-inline{list-style:none}
+.list-inline li{display:inline;padding-right:.5rem}.list-group-item:active{background-color:#eee}
+body{padding-top:0}.content{margin-top:1rem}.navbar-sidebar{margin-right:50px;margin-top:30px}
+.navbar-sidebar a{margin:0;padding:0;text-decoration:none;color:#fff;font-weight:700}
+.jumbotron{height:600px;width:100%;padding-left:100px;margin-bottom:0}.banner-content{height:600px;width:100%;margin-bottom:0}
+.col-centered{float:none;margin:0 auto}.scroll{font-size:60px}.blockquote{height:200px;width:100%;font-size:30px;text-align:center;padding-top:60px}
+.card-title{font-family:Georgia,"Times New Roman",Times,serif}.base-finder button:active,.base-finder button:focus{outline:0}
+.base-finder .card{border-radius:0;border:0}.newsletter{background-color:#bbb;color:#373a3c;font-size:14px}
+.footer{background-color:#373a3c;color:#fff;font-size:14px}.footer a{color:#fff}

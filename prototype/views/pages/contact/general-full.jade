@@ -1,0 +1,90 @@
+extends ../../layouts/layout.jade
+
+block content
+    .container
+        .content
+            .row
+                .col-md-12
+                    .card.single
+                        .card-header Contact Us
+                        .card-block
+                            h1.card-title.sans Emergency Contacts
+                            .card.story.card-inverse.bg-danger
+                                .row
+                                    .col-md-12
+                                        .card-block
+                                            h2.card-title.sans 112
+                                            h5.card-title.sans Craig Lambinon 082 380 3800
+                                            h5.card-title.sans Meriel Bartlett 082 994 7555
+                            br
+                            h1.card-title.sans Rescue Base Regions
+                            .card.story.card-inverse.bg-warning
+                                .row
+                                    .col-md-6
+                                        .card-block
+                                            h5.card-title.sans Inland
+                                            h5.card-title.sans Helicopter Services
+                                            h5.card-title.sans Kwazulu Natal
+                                    .col-md-6
+                                        .card-block
+                                            h5.card-title.sans Eastern Cape
+                                            h5.card-title.sans Western Cape
+                                            h5.card-title.sans
+                                                a(href="/contact/bases", style="text-decoration: none; color: #fff;")
+                                                    u Find More
+                                                    &nbsp;&nbsp;
+                                                    i.fa.fa-arrow-right.fa-1
+
+                            br
+                            h1.card-title.sans Head Office
+                            .row
+                                .col-md-12
+                                    .card.story.card-inverse(style="background-color:#555")
+                                        .card-block
+                                            h5.card-title.sans 021 434 4011
+                                            h5.card-title.sans info@searescue.org.za
+                                            br
+                                            h5.card-title.sans GPS: 33° 54’ 32” S  018° 23’ 53” E
+                                            h5.card-title.sans 1 Glengariff Road, Three Anchor Bay, Cape Town, 8005
+                                            h5.card-title.sans P.O. Box 154, Green Point, 8051
+                                            br
+                                            h5.card-title.sans Company Reg. No: 1967/013618/08
+                                            h5.card-title.sans NPO Reg. No. 002 – 870
+                                            br
+                                            h5.card-title.sans Marketing: Jackie 021 202 4753
+                            br
+
+                            img.thumbnail(src="holder.js/100px400?text=Map")
+                            p.small.text-right
+                                em This is an image caption
+                    br
+                    .row
+                        .col-md-12
+                            .card.story
+                                .card-block
+                                    h3.card-title Send Us a Message
+                                    form
+                                        fieldset.form-group
+                                            label(for='exampleInputPassword1') Name
+                                            input#exampleInputPassword1.form-control(type='text', placeholder='')
+                                        fieldset.form-group
+                                            label(for='exampleInputEmail1') Email address
+                                            input#exampleInputEmail1.form-control(type='email', placeholder='')
+                                        fieldset.form-group
+                                            label(for='exampleSelect1') Subject
+                                            select#exampleSelect1.form-control
+                                              option General
+                                              option Marketing
+                                              option Donating
+                                              option Volunteering
+                                              option Comments/Suggestions
+                                        fieldset.form-group
+                                            label(for='exampleTextarea') Message
+                                            textarea#exampleTextarea.form-control(rows='4')
+                                        .checkbox
+                                            label
+                                              input(type='checkbox')
+                                              |  Sign me up for the NSRI newsletter.
+                                        button.btn.btn-primary(type='submit') Submit
+
+    br

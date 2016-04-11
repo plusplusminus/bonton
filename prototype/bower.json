@@ -1,12 +1,12 @@
 {
-  "name": "XXX",
+  "name": "bonton",
   "description": "New Project",
   "main": "index.js",
   "authors": [
     "Sergio Pellegrini <sergio@plusplusminus.co.za> (http://plusplusmoinus.co.za/)"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/plusplusminus/xxx",
+  "homepage": "https://github.com/plusplusminus/bonton",
   "moduleType": [],
   "ignore": [
     "**/.*",

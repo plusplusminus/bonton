@@ -1,0 +1,281 @@
+extends ../layouts/layout.jade
+
+block content
+    .container
+        .content       
+            .row
+                .col-md-8
+                    .card.single
+                        .card-block
+                            h1.card-title Partner with Us
+                            .clearfix
+                            p.card-text.lead NSRI Partnership is an exclusive opportunity; participation is limited to ten partners at any one time and is seen as a long term partnership and brand investment. This partnership fee goes towards the overheads of our head office.
+                            p.card-text.lead Simply apply below or 
+                                a(href="https://www.dropbox.com/s/pgzf9nrztn0vgky/Application%20for%20Corporate%20Partnership%20Form%20-%20Electronic.pdf?dl=0") download the application.
+                            br
+                            a(name="membership")
+                            .row
+                                .col-md-12
+                                    
+                                    .card.story.card-inverse(style="background-color:#888")
+                                        .card-block
+                                            h3.card-title Platinum
+                                            br  
+                                            .card-text
+                                                h4 R120,000 per annum
+                                                | Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.
+                                            //- br
+                                            //- button.btn.btn-success.pull-right(type='button', data-toggle='modal', data-target='#myModalPartner')    Apply Now
+                                            //- br
+                                        br
+                            a(name="donate")
+                            .row
+                                .col-md-12
+                                    
+                                    .card.story.card-inverse(style="background-color:#555")
+                                        .card-block
+                                            h3.card-title Gold
+                                            br
+                                            .card-text
+                                                h4 R22,000 per annum
+                                                | Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.
+                                            //- br
+                                            //- button.btn.btn-success.pull-right(type='button', data-toggle='modal', data-target='#myModalPartner')    Apply Now
+                                            //- br
+                                        br
+                            a(name="volunteer")
+                            .row
+                                .col-md-12
+                                    
+                                    .card.story.card-inverse(style="background-color:#888")
+                                        .card-block
+                                            h3.card-title Silver
+                                            br
+                                            .card-text
+                                                h4 R3,300 per annum
+                                                | Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.
+                                            //- br
+                                            //- button.btn.btn-success.pull-right(type='button', data-toggle='modal', data-target='#myModalPartner')    Apply Now
+                                            //- br
+                                        br
+                            a(name="sponsor")
+                            .row
+                                .col-md-12
+                                    .card.story.card-inverse(style="background-color:#555")
+                                        .card-block
+                                            h3.card-title Bronze
+                                            br      
+                                            .card-text
+                                                h4 R1,650 per annum
+                                                | Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.
+                                            //- br
+                                            //- button.btn.btn-success.pull-right(type='button', data-toggle='modal', data-target='#myModalPartner')    Apply Now
+                                            //- br
+                                        br
+                            br
+                    br
+                    .row
+                        .col-md-12
+                            .card.story
+                                .card-block
+                                    h3.card-title Application for Corporate Partnership
+                                    small.text-muted
+                                        em For corporate partnerships queries, please contact 
+                                        a(href="stuart@searescue.org.za")
+                                            em Stuart Moerdyk.
+                                    hr
+                                    br
+                                    h4.card-title Company Details
+                                    br
+                                    form
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Company
+                                        .col-sm-6
+                                          input.form-control(type='text', placeholder='')
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Contact name
+                                        .col-sm-6
+                                          input.form-control(type='text', placeholder='')
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Designation
+                                        .col-sm-6
+                                          input.form-control(type='text', placeholder='')
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Email address
+                                        .col-sm-6
+                                          input.form-control(type='email', placeholder='')
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Phone number
+                                        .col-sm-6
+                                          input.form-control(type='text', placeholder='')
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Fax number
+                                        .col-sm-6
+                                          input.form-control(type='text', placeholder='')
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Street address
+                                        .col-sm-6
+                                          textarea.form-control(type='text', rows='3')
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Postal address
+                                        .col-sm-6
+                                          textarea.form-control(type='text', rows='3')
+                                    hr
+                                    br
+                                    h4.card-title Partnership
+                                    br
+                                    form
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Select a Partnership option
+                                        .col-sm-6
+                                            select.form-control
+                                                option Platinum
+                                                option Gold
+                                                option Bronze
+                                                option Silver
+                                    br
+                                    hr
+                                    br
+                                    h4.card-title Additional Donation
+                                    br
+                                    form
+                                    .form-group.row    
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Amount (in South African Rands)
+                                        .col-sm-6
+                                            input.form-control(type='email', placeholder='')
+                                    br     
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Select a Rescue Base
+                                        .col-sm-6
+                                            select.form-control
+                                                option Base
+                                                option Base
+                                                option Base
+                                                option Base
+                                                option Base
+                                    br
+                                    hr
+                                    br
+                                    h4.card-title NSRI Banking Details
+                                    br
+                                    form
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Bank
+                                        .col-sm-6 ABSA Bank
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Account number
+                                        .col-sm-6 013 824 80 607
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Branch
+                                        .col-sm-6 Heerengracht
+                                    .form-group.row
+                                        label.col-sm-5.col-sm-offset-1.form-control-label Branch code
+                                        .col-sm-6 506 009
+                                            
+                                    br
+                                    hr
+                                    br
+                                    form
+                                        small.text-muted Not only is your support crucial to our organisation but all donations whether in cash or gift-in-kind, afford donors:–  points for their BBBEE scorecard (since more than 76% of our beneficiaries are per definition black)–  as well as a tax rebate (since we have been afforded special SARS 18A status)
+                                        br
+                                        br
+                                        small.text-muted Note: SARS rebates are not available for entry fees to an event or competition – only for donations.You will also be associating your company with a well-known and highly respected brandand we have created a logo specifically for our corporate donors to use as they see fit.
+                                    br
+                                    br
+                                    button.btn.btn-success(type='submit') Apply
+
+                .col-md-4
+                    .card.sidebar
+                        .card-block
+                            h4.card-title Get Involved
+                            .list-group.list-group-flush
+                                a.list-group-item(href="/donate")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Donate
+                                a.list-group-item(href="/volunteer")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Volunteer Your Time
+                                a.list-group-item(href="/membership")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Membership Options
+                                a.list-group-item.active(href="/partner")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Partner with Us
+                                a.list-group-item(href="/sponsor")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Sponsor a Boat
+                    
+                    .card.story.card-inverse(style="background-color:#333;")
+                        .card-block
+                            br
+                            br
+                            h3.card-title Bakoven Rescue Base needs medical volunteers.
+                            br
+                            h3.card-title
+                                a(href="/volunteer") Apply now.
+                            br
+                    .card.story.card-inverse(style="background-color:#ccc;")
+                        .card-block
+                            br
+                            br
+                            h3.card-title Vaal Rescue Base needs rescue boat equipment.
+                            br
+                            h3.card-title
+                                a(href="/donate") Donate now.
+                            br
+                    .card.story
+                        .card-header.small
+                            strong Our Current Partners
+                        .card-block
+                            img.card-img-top(src="holder.js/100px200?text=Partner Logo")
+                            br
+                            img.card-img-top(src="holder.js/100px200?text=Partner Logo")
+                            br
+                            img.card-img-top(src="holder.js/100px200?text=Partner Logo")
+                            br
+                            img.card-img-top(src="holder.js/100px200?text=Partner Logo")
+                            br
+                            img.card-img-top(src="holder.js/100px200?text=Partner Logo")
+                            br
+                            img.card-img-top(src="holder.js/100px200?text=Partner Logo")
+                            br
+                            img.card-img-top(src="holder.js/100px200?text=Partner Logo")
+
+                            //- br
+                            //- button.btn.btn-success.btn-lg.pull-right(type='submit') Partner with Us
+                            //- br
+                        br
+                    .card.story.card-inverse(style="background-color:#555;")
+                        .card-block
+                            br
+                            br
+                            h3.card-title Durban Rescue Base needs administrative volunteers.
+                            br
+                            h3.card-title
+                                a(href="/volunteer") Apply now.
+                            br
+            br
+
+            //- #myModalPartner.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            //-    .modal-dialog(role='document')
+            //-             .modal-content
+
+            //-                 .modal-header
+            //-                     button.close(type='button', data-dismiss='modal', aria-label='Close')
+            //-                         span(aria-hidden='true') ×
+            //-                     h4.modal-title Volunteer
+            //-                 .modal-body
+            //-                     form
+            //-                         .form-group
+            //-                             label(for='exampleInputName2') Full Name&nbsp;
+            //-                             input#exampleInputName2.form-control(type='text', placeholder='')
+            //-                         .form-group
+            //-                             label(for='exampleInputEmail2') Email address&nbsp;
+            //-                             input#exampleInputEmail2.form-control(type='email', placeholder='')
+            //-                         br
+            //-                         .checkbox.small.text-muted
+            //-                         label
+            //-                         input(type='checkbox')
+            //-                         |   Sign me up for the NSRI newsletter.
+            //-                 .modal-footer
+            //-                     button.btn.btn-primary(type='button', data-dismiss='modal') Close
