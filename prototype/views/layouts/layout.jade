@@ -7,57 +7,34 @@ html(lang="en")
             link( rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     body
         
+        block header
+
+            include ../includes/header.jade
+
+        block split
+
+            include ../includes/split.jade
+
         block content
 
-        block newsletter
-            
-            footer.newsletter
-                .container
-                    br
-                    br
-                    .row
-                        .col-md-12.text-md-center
-                            h5 Sign up to receive our newsletter   
-                    br
-                    .row
-                        .col-md-6.col-md-offset-3
-                            form(name="input", action="html_form_action.asp", method="get")
-                                .row
-                                    .form-group.col-md-12
-                                        input.form-control(type="text", name="name" placeholder="Full Name")
-                                .row
-                                    .form-group.col-md-12
-                                        input.form-control(type="text", name="email" placeholder="Email Address")
-                                .row
-                                    .col-md-6.col-md-offset-3
-                                        input.btn.btn-primary.btn-block(type="submit", value="Submit")
-                    br
-                    br
+        block quote
 
-        block foot
+            include ../includes/quote.jade
 
-            footer.footer
-                .container
-                    br
-                    br
-                    .row
-                        .col-md-12
-                            ul.nav.navbar-nav.pull-md-left
-                                li.nav-item Home
-                                li.nav-item About
-                                li.nav-item Contact
+        block about
 
-                    br
-                    hr(style="margin-top: 0px; margin-bottom: 0px; border-color: #ccc;")
+            include ../includes/about.jade
+
+        block footer
                         
             footer.footer
                 .container
                     br
                     .row
-                        .col-md-6
-                            small © 2016 BonTon Events. 
+                        .col-md-6.text
+                            | © 2016 BonTon Events.
                             br
-                            small Built by PlusPlusMinus.
+                            | Built by PlusPlusMinus.
                         .col-md-6
                             ul.nav.navbar-nav.pull-md-right
                                 li.nav-item
@@ -76,6 +53,32 @@ html(lang="en")
                                     a.nav-link(href="http://bonton.co.za/feed/")
                                         i.fa.fa-rss-square.fa-2x
                     br
+
+                    #workwithus.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+                        .modal-dialog(role='document')
+                            .modal-content
+                                .modal-header
+                                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .lead.modal-title Work with us
+                                .modal-body
+                                    .lead Fusce dapibus, tellus ac cursus commodo.
+                                    br
+                                    form
+                                        fieldset.form-group
+                                            label.lead Name
+                                            input.form-control(type='text')
+                                        fieldset.form-group
+                                            label.lead Email
+                                            input.form-control(type='text')
+                                        fieldset.form-group
+                                            label.lead Message
+                                            textarea.form-control(rows='3')
+
+                                .modal-footer
+                                    button.btn.btn-secondary(type='button', data-dismiss='modal') Send message
+
+
 
         block footscripts
             script(src="../bower/jquery/dist/jquery.min.js")

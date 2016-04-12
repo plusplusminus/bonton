@@ -1,0 +1,68 @@
+extends ./layouts/layout.jade
+
+block split
+	.row
+		.col-md-6.header
+			.inner
+		.col-md-6.header
+			.inner
+				h2 Event name
+				.lead 
+					i.fa.fa-quote-left.fa-4 &nbsp; 
+					| Integer posuere erat a ante venenatis dapibus posuere.&nbsp;
+					i.fa.fa-quote-right.fa-4
+					br
+					h6.text-muted
+						em Lorem Sollicitudin
+	
+block content
+	.container.work
+		.row
+			.col-md-8.lead
+				p Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.
+				p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.
+				p Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.
+				p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
+				br
+				//- button.btn.btn-secondary(type='button', data-toggle='modal', data-target='#workwithus') Work with us
+			.col-md-4
+				.card
+					ul.list-group.list-group-flush
+						li.list-group-item Client
+						li.list-group-item Concept, organisation &amp; on the day
+						li.list-group-item Style
+						li.list-group-item Service providers
+							br
+							ul.small XXXX
+							ul.small XXXX
+							ul.small XXXX
+							ul.small XXXX
+							ul.small XXXX
+							ul.small XXXX
+
+		.row
+			.col-md-6
+				.card.work
+					a(href="/")
+						img(src="holder.js/100px250")
+
+			.col-md-6
+				.card.work
+					a(href="/")
+						img(src="holder.js/100px250")
+		br
+		br
+		.row
+			.col-md-6
+				.card.work
+					a(href="/")
+						img(src="holder.js/100px250")
+
+			.col-md-6
+				.card.work
+					a(href="/")
+						img(src="holder.js/100px250")
+		br
+		.row
+			.col-md-1.col-centered
+				button.btn.btn-secondary Load more

@@ -21,6 +21,18 @@ app.get('/', function (req, res) {
   res.render('index', {data: data})
 })
 
+app.get('/weddings', function (req, res) {
+  res.render('weddings', {data: data})
+})
+
+app.get('/corporate', function (req, res) {
+  res.render('corporate', {data: data})
+})
+
+app.get('/weddings/work', function (req, res) {
+  res.render('work', {data: data})
+})
+
 var server = app.listen(3000, function () {
   console.log('Server running at http://localhost:' + server.address().port)
 })

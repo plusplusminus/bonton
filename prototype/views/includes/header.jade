@@ -1,20 +1,17 @@
-.row
-	#carousel.carousel.slide(data-ride='carousel')
-		ol.carousel-indicators
-			li.active(data-target='#carousel', data-slide-to='0')
-			li(data-target='#carousel', data-slide-to='1')
-		.carousel-inner(role='listbox')
-			.carousel-item.active
-				.jumbotron.bg-inverse
-					h1.display-3 Malesuada Purus Egestas.
-					p.lead
-					| Cras mattis consectetur purus sit amet fermentum.
-			.carousel-item
-				.jumbotron.bg-inverse
-					h1.display-3 Fusce Etiam Cursus.
-					p.lead
-					| Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-
-.row
-	.col-md-1.col-centered.scroll
-		i.fa.fa-arrow-down
+.row.nav
+	.col-md-7.col-centered
+		nav.nav.nav-inline
+			a.nav-link(href='/weddings') Weddings
+			a.nav-link(href='#') Corporate
+			a.nav-link(href='#')
+				img(src="holder.js/300x100?text= &bg=#ddd")
+			a.nav-link(href='#') Contact
+			.nav-link
+			a.nav-link.social(href='#')
+				i.fa.fa-facebook
+			a.nav-link.social(href='#')
+				i.fa.fa-twitter
+			a.nav-link.social(href='#')
+				i.fa.fa-pinterest
+			//- a.nav-link.social(href='#')
+			//- 	i.fa.fa-instagram
