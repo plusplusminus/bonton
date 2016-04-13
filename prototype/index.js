@@ -33,6 +33,10 @@ app.get('/weddings/work', function (req, res) {
   res.render('work', {data: data})
 })
 
+app.get('/weddings/qualify', function (req, res) {
+  res.render('qualify', {data: data})
+})
+
 var server = app.listen(3000, function () {
   console.log('Server running at http://localhost:' + server.address().port)
 })

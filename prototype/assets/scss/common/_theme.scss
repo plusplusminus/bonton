@@ -28,13 +28,19 @@
 }
 
 .header .inner {
-	padding: 150px 150px 0px 200px;
+	padding: 150px 150px 50px 200px;
 	background-color: #eee;
 	height: 400px;
 		&:hover,
 		&:active {
 			background-color: #ddd;
 		}
+}
+
+.header .inner.landing {
+	padding: 150px 150px 50px 200px;
+	background-color: #eee;
+	height: 425px;
 }
 
 .nav-inline .nav-item + .nav-item, .nav-inline .nav-link + .nav-link {
@@ -210,6 +216,18 @@ li {
 
 .lead {
 	line-height: 1.75em;
+}
+
+.lead.small {
+	font-size: 1rem;
+}
+
+.lead.cite {
+	font-size: 0.8rem;
+}
+
+.lead.cite.large {
+	font-size: 1.1rem;
 }
 
 .btn-secondary {

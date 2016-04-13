@@ -2,10 +2,11 @@
 	.col-md-7.col-centered
 		nav.nav.nav-inline
 			a.nav-link(href='/weddings') Weddings
-			a.nav-link(href='#') Corporate
-			a.nav-link(href='#')
+			a.nav-link(href='/corporate') Corporate
+			a.nav-link(href='/')
 				img(src="holder.js/300x100?text= &bg=#ddd")
-			a.nav-link(href='#') Contact
+			a.nav-link(data-toggle='modal', data-target='#contact') Contact
+
 			.nav-link
 			a.nav-link.social(href='#')
 				i.fa.fa-facebook
@@ -15,3 +16,29 @@
 				i.fa.fa-pinterest
 			//- a.nav-link.social(href='#')
 			//- 	i.fa.fa-instagram
+
+
+		#contact.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+						.lead.modal-title Get in touch
+					.modal-body
+						.lead Fusce dapibus, tellus ac cursus commodo.
+
+						br
+						form
+						fieldset.form-group
+							label.lead.small Name
+							input.form-control(type='text')
+						fieldset.form-group
+							label.lead.small Email
+							input.form-control(type='text')
+						fieldset.form-group
+							label.lead.small Message
+							textarea.form-control(rows='3')
+
+					.modal-footer
+						button.btn.btn-secondary(type='button', data-dismiss='modal') Send message
