@@ -3,53 +3,42 @@ extends ./layouts/layout.jade
 block split
 	.row
 		.col-md-6.header
-			.inner
+			.inner.work
 		.col-md-6.header
-			.inner
-				h2 Event name
+			.inner.work
+				h2 Jane &amp; John Wed
 				.lead 
 					i.fa.fa-quote-left.fa-4 &nbsp; 
-					| Integer posuere erat a ante venenatis dapibus posuere.&nbsp;
+					| Client quote. Integer posuere erat a ante venenatis dapibus posuere.&nbsp;
 					i.fa.fa-quote-right.fa-4
-					br
-					h6.text-muted
-						em Lorem Sollicitudin
+					//- br
+					//- h6.text-muted
+					//- 	em Jane
 	
 block content
 	.container.work
 		.row
-			.col-md-8.lead
+			.col-md-8.lead(style="padding-right: 40px; font-size: 1rem;")
 				p Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.
 				p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.
 				p Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.
-				p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
 				br
 				//- button.btn.btn-secondary(type='button', data-toggle='modal', data-target='#workwithus') Work with us
 			.col-md-4
-				.card
+				.card.deets
 					ul.list-group.list-group-flush
-						li.list-group-item Client
-						li.list-group-item Concept, organisation &amp; on the day
+						li.list-group-item Our role
+							ul.small Concept, organisation &amp; on the day
 						li.list-group-item Style
+							ul.small Bohemian, Casual
 						li.list-group-item Service providers
 							br
-							ul.small XXXX
-							ul.small XXXX
-							ul.small XXXX
-							ul.small XXXX
-							ul.small XXXX
-							ul.small XXXX
-
-		.row
-			.col-md-6
-				.card.work
-					a(href="/")
-						img(src="holder.js/100px250")
-
-			.col-md-6
-				.card.work
-					a(href="/")
-						img(src="holder.js/100px250")
+							ul.small Venue | Newlands Forest
+							ul.small Photographer | He is Visual
+							ul.small Flowers | Le Fleur
+							ul.small Cake | Charly's Bakery
+							ul.small Dress | Elbeth Gillis
+							ul.small Hair &amp; Makeup | Ida Webster
 		br
 		br
 		.row
@@ -64,5 +53,92 @@ block content
 						img(src="holder.js/100px250")
 		br
 		.row
-			.col-md-1.col-centered
-				button.btn.btn-secondary Load more
+			.col-md-6
+				.card.work
+					a(href="/")
+						img(src="holder.js/100px250")
+
+			.col-md-6
+				.card.work
+					a(href="/")
+						img(src="holder.js/100px250")
+		br
+
+block quote
+	.container.related
+		h2.text-xs-center Some of our other work
+		br
+		br
+		.row
+			.col-md-6
+				.card.related(style="margin-right: 1rem;")
+					a(href="/weddings/work")
+						img(src="holder.js/100px250")
+					br
+					h6.card-subtitle.text-muted WEDDINGS
+					a(href="/weddings/work")
+						h4.card-title Condimentum Nibh Venenatis Purus
+					p.card-text Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+			.col-md-6
+				.card.related(style="margin-left: 1rem;")
+					a(href="/weddings/work")
+						img(src="holder.js/100px250")
+					br
+					h6.card-subtitle.text-muted WEDDINGS
+					a(href="/weddings/work")
+						h4.card-title Condimentum Nibh Venenatis Purus
+					p.card-text Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	
+
+block about
+	.about
+		.container.grid
+			.row
+				.col-md-6
+					img(src='holder.js/120x120?bg=#ddd')
+					img(src='holder.js/120x120?bg=#eee')
+					img(src='holder.js/120x120?bg=#ddd')
+					img(src='holder.js/120x120?bg=#eee')
+					img(src='holder.js/120x120?bg=#eee')
+					img(src='holder.js/120x120?bg=#ddd')
+					img(src='holder.js/120x120?bg=#eee')
+					img(src='holder.js/120x120?bg=#ddd')
+					img(src='holder.js/120x120?bg=#ddd')
+					img(src='holder.js/120x120?bg=#eee')
+					img(src='holder.js/120x120?bg=#ddd')
+					img(src='holder.js/120x120?bg=#eee')
+
+				.col-md-6.lead
+					p In French, “BonTon” means “in good fashion”, which exemplifies the sophisticated and seamless manner in which we plan and implement extraordinary events for our clients.
+					p We professionally and expertly handle all aspects of event planning, from the original idea to final implementation.
+					br
+					button.btn.btn-secondary(type='button', data-toggle='modal', data-target='#workwithus') Work with us
+					&nbsp;&nbsp;
+					a.btn.btn-secondary(href="/weddings") Our wedding work
+
+
+				#workwithus.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+					.modal-dialog(role='document')
+						.modal-content
+							.modal-header
+								button.close(type='button', data-dismiss='modal', aria-label='Close')
+									span(aria-hidden='true') ×
+								.lead.modal-title Work with us
+							.modal-body
+								.lead Fusce dapibus, tellus ac cursus commodo.
+
+								br
+								form
+									fieldset.form-group
+										label.lead.small Name
+										input.form-control(type='text')
+									fieldset.form-group
+										label.lead.small Email
+										input.form-control(type='text')
+									fieldset.form-group
+										label.lead.small Message
+										textarea.form-control(rows='3')
+
+							.modal-footer
+								button.btn.btn-secondary(type='button', data-dismiss='modal') Send message
