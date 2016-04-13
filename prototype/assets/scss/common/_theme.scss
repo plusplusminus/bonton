@@ -63,7 +63,15 @@
 		}
 }
 
-
+.inner.landing h2, .inner h2, .inner a {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: $brand-black;
+		&:hover,
+		&:active {
+			color: $brand-grey;
+			text-decoration: none;
+		}
+}
 
 .list-inline {
 	list-style: none;
